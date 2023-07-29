@@ -1,9 +1,8 @@
 <html>
+    <title>Ayush's Website</title>
     <body>
-        <div id="container"><div id="topBar"><center><i><medium>there was not any time in the past when I did not exist; nor you, nor these rules of men. And surely it is not that we all shall cease to exist after this.</center></i></medium></div><div id="header"></div>
-            <div id="headerArea">
-                
-                
+        <div id="container"><div id="topBar"><i><medium>there was not any time in the past when I did not exist; nor you, nor these rules of men. And surely it is not that we all shall cease to exist after this.</i></medium></div><div id="header"></div>
+            <div id="headerArea">         
             <nav id="navbar" style="margin-bottom: 10px;"><ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
@@ -30,11 +29,83 @@
                 <main>
                     <h1>Hello Friend!</h1>
                     <p><strong>Welcome ⋆.ೃ࿔*:･</strong></p>
-                    <p><small>I am Ayush. I am a 19 years old guy from Delhi, India; who loves computers and technology. This is my little big place on the vast interney. Enjoy your stay here.</small></p>
-                    <p><small>This website is still under development. Expect a blog post where I can write my thoughts without any restrictions soon. And some themeing changes too.</small></p>
+                    <p><small>I am Ayush. I am a 19 years old guy from Delhi, India; who loves computers and technology. This is my little big place on the vast internet. Enjoy your stay here.</small></p>
+                    <p><small>This website is still under development. Expect a blog post section soon where I can write my thoughts without any restrictions. Some themeing changes too.</small></p>
+
+                        <style>
+                            /* Add some basic styling */
+                            body {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100vh;
+                                margin: 0;
+                            }
+                            .image-container {
+                                display: flex;
+                                justify-content: space-between;
+                                max-width: 100%;
+                                width: 600px; /* Adjust the width as needed */
+                            }
+                            .image-container img {
+                                max-width: 30%; /* Adjust the width as needed */
+                                max-height: 200px; /* Adjust the height as needed */
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="image-container">
+                            <img id="randomImage1" src="" alt="Random Image 1">
+                            <img id="randomImage2" src="" alt="Random Image 2">
+                            <img id="randomImage3" src="" alt="Random Image 3">
+                        </div>
+                        <script>
+                            // JavaScript part
+                            // Define an array with the URLs of your images
+                            const imageUrls = [
+                                'https://i.pinimg.com/736x/6b/b4/68/6bb468e4ae360b371773876c46d4d93b.jpg',
+                                'https://i.pinimg.com/736x/7d/dd/61/7ddd61e721cc385eb5744d96493afb6a.jpg',
+                                'https://i.pinimg.com/564x/50/90/20/5090201b61fde5c933bd8e8ad4caa8a0.jpg',
+                                'https://i.pinimg.com/1200x/bb/09/50/bb095081674dd278d267c1a2a3844ab3.jpg',
+                                'https://i.pinimg.com/564x/45/ba/dd/45baddfe5b42260c54e476f9ba042f6a.jpg',
+                                'https://favim.com/pd/s11/orig/7/710/7108/71084/aesthetic-girl-hair-black-Favim.com-7108492.jpg',
+                                'https://i.pinimg.com/originals/c0/ec/19/c0ec190f270af0f83a49a3138ecddb8d.jpg',
+                                'https://i.pinimg.com/originals/8c/24/53/8c24534bde83f4a0d0abc0573c312bb7.jpg',
+                                // Add more image URLs here as needed
+                            ];
+                    
+                            // Function to get a random image URL
+                            function getRandomImageUrl() {
+                                return imageUrls[Math.floor(Math.random() * imageUrls.length)];
+                            }
+                    
+                            // Function to set the image source
+                            function setRandomImages() {
+                                const imgElement1 = document.getElementById('randomImage1');
+                                const imgElement2 = document.getElementById('randomImage2');
+                                const imgElement3 = document.getElementById('randomImage3');
+                                
+                                const randomImageUrl1 = getRandomImageUrl();
+                                const randomImageUrl2 = getRandomImageUrl();
+                                const randomImageUrl3 = getRandomImageUrl();
+                                
+                                imgElement1.src = randomImageUrl1;
+                                imgElement2.src = randomImageUrl2;
+                                imgElement3.src = randomImageUrl3;
+                            }
+                    
+                            // Set random images when the page is loaded
+                            setRandomImages();
+                        </script>
+                    </body>
+                    </html>
+
                 </main>
             </div>
+<p></p>
+
             <footer id="footer">
+                
                 <a href="https://larbs.xyz/" target="_top">
                     <img src="https://cyber.dabamos.de/88x31/larbs.gif" width="88" height="31" /></a>
                 <a href="https://gaycenter.org/about/lgbtq/" target="_top">
@@ -44,11 +115,8 @@
                 <a href="https://denshi.org/antiporn" target="_top">
                     <img src="https://denshi.org/buttons/banporn.png" width="88" height="31" /></a>
             </footer>
-            <footer id="footer">
-                <small>Made with 💜 by Ayush</small><br>
-                <small><small>© Copyright <i>2023</i>. All Right Reserved.</small></small>
-            </footer>
         </div>
+
         <!-- THIS IS THE CSS !-->
         <style>
             /* user styles */
@@ -60,11 +128,11 @@
     the images as variables */
 
             :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+                --header-image: url('https://i.pinimg.com/736x/da/81/72/da8172d677a0b0ad74e12984cac6c7a1.jpg');
+                --body-bg-image: url('https://media.tenor.com/jOjF9a-DUToAAAAC/rain-drizzle.gif');
 
                 /* colors */
-                --content: #43256E;
+                --content: #0B0B0B;
             }
 
             /* if you have the URL of a font, you can set it below */
@@ -108,7 +176,7 @@
                 background-color: #08031A;
                 /* you can delete the line below if you'd prefer to not use an image */
                 background-size: 65px;
-                color: #fceaff;
+                color: #FFFFFF;
                 background-image: var(--body-bg-image);
             }
 
@@ -139,7 +207,7 @@
             /* the area below is for all links on your page
     EXCEPT for the navigation */
             #container a {
-                color: #ED64F5;
+                color: #FFFFFF;
                 font-weight: bold;
                 /* if you want to remove the underline
       you can add a line below here that says:
@@ -148,7 +216,7 @@
 
             #header {
                 width: 100%;
-                background-color: #5e4e8c;
+                background-color: #0B0B0B;
                 /* header color here! */
                 height: 150px;
                 /* this is only for a background image! */
@@ -161,7 +229,7 @@
             /* navigation section!! */
             #navbar {
                 height: 40px;
-                background-color: #13092D;
+                background-color: #0B0B0B;
                 /* navbar color */
                 width: 100%;
             }
@@ -180,7 +248,7 @@
 
             /* navigation links*/
             #navbar li a {
-                color: #ED64F5;
+                color: #FFFFFF;
                 /* navbar text color */
                 font-weight: 800;
                 text-decoration: none;
@@ -189,7 +257,7 @@
 
             /* navigation link when a link is hovered over */
             #navbar li a:hover {
-                color: #a49cba;
+                color: #FFFFFF;
                 text-decoration: underline;
             }
 
@@ -201,7 +269,7 @@
     if you want to style them separately,
     create styles for #leftSidebar and #rightSidebar */
             aside {
-                background-color: #241445;
+                background-color: #0B0B0B;
                 width: 200px;
                 padding: 20px;
                 font-size: smaller;
@@ -212,7 +280,7 @@
             /* this is the color of the main content area,
     between the sidebars! */
             main {
-                background-color: #43256E;
+                background-color: #0B0B0B;
                 flex: 1;
                 padding: 20px;
                 order: 2;
@@ -233,19 +301,19 @@
             }
 
             footer {
-                background-color: #13092D;
+                background-color: #0B0B0B;
                 /* background color for footer */
                 width: 100%;
                 height: 40px;
                 padding: 10px;
                 text-align: center;
-                /* this centers the footer text */
+                /* this centers the footer text */ 
             }
 
             h1,
             h2,
             h3 {
-                color: #ED64F5;
+                color: #FFFFFF;
             }
 
             h1 {
@@ -254,13 +322,13 @@
 
             strong {
                 /* this styles bold text */
-                color: #ED64F5;
+                color: #FFFFFF;
             }
 
             /* this is just a cool box, it's the darker colored one */
             .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
+                background-color: #0B0B0B;
+                border: 1px solid #FFFFFF;
                 padding: 10px;
             }
 
@@ -271,7 +339,7 @@
                 height: 30px;
                 padding: 10px;
                 font-size: smaller;
-                background-color: #13092D;
+                background-color: #0B0B0B;
             }
 
 
