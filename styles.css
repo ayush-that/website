@@ -1,4 +1,70 @@
-            /* below this line is CSS for the layout */
+<style>
+    /* user styles */
+
+    /* styles are what change the color and sizes of stuff on your site. */
+
+    /* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+    :root {
+        --header-image: url('https://i.pinimg.com/736x/da/81/72/da8172d677a0b0ad74e12984cac6c7a1.jpg');
+        --body-bg-image: url('https://media.tenor.com/jOjF9a-DUToAAAAC/rain-drizzle.gif');
+
+        /* colors */
+        --content: #0B0B0B;
+    }
+
+    /* if you have the URL of a font, you can set it below */
+    /* feel free to delete this if it's not your vibe */
+
+    /* this seems like a lot for just one font and I would have to agree 
+but I wanted to include an example of how to include a custom font.
+If you download a font file you can upload it onto your Neocities
+and then link it! Many fonts have separate files for each style
+(bold, italic, etc. T_T) which is why there are so many!
+
+*/
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: Nunito;
+        src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        background-color: #08031A;
+        /* you can delete the line below if you'd prefer to not use an image */
+        background-size: 65px;
+        color: #FFFFFF;
+        background-image: var(--body-bg-image);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+/* below this line is CSS for the layout */
 
             /* this is a CSS comment
     to uncomment a line of CSS, remove the * and the /
@@ -187,3 +253,4 @@ feel free to play around with the order!
             flex-wrap: wrap;
         }
     }
+    </style>
