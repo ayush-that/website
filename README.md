@@ -1,2 +1,2 @@
 # website
-code for my website - ayush-that.neocities.org
+code for my website - ayush[dot]pro
